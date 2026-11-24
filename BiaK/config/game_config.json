@@ -1,0 +1,28 @@
+{
+  "project_name": "Karnaugh Game - đoán hàm số",
+  "version": "1.0.0",
+  "description": "Game giáo dục giúp học sinh luyện tập kỹ thuật rút gọn hàm logic bằng bìa Karnaugh",
+  "grade_levels": {
+    "basic": {
+      "name": "Cơ bản",
+      "variables": [2, 3],
+      "difficulty": 1
+    },
+    "advanced": {
+      "name": "Nâng cao",
+      "variables": [3, 4, 5],
+      "difficulty": 2
+    }
+  },
+  "features": [
+    "Hiển thị bìa Karnaugh với các nhóm đã xác định",
+    "Cho phép người chơi nhập đáp án",
+    "Kiểm tra và hiển thị kết quả",
+    "Hệ thống điểm số và cấp độ",
+    "Hỗ trợ hàm 2,3,4,5 biến"
+  ],
+  "tech_stack": {
+    "gui_framework": "Tkinter",
+    "language": "Python 3.8+"
+  }
+}

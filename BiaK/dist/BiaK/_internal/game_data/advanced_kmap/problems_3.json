@@ -1,0 +1,6794 @@
+{
+  "level": "advanced",
+  "category": "3_variables_advanced",
+  "description": "Bài toán 3 biến nâng cao, ô cô lập & Don't Care",
+  "problems": [
+    {
+      "id": "A3-001",
+      "title": "Bao biên kép F = Σm(0,2,5,7)",
+      "num_vars": 3,
+      "difficulty": 4,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1",
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C' + AC",
+      "answer_explanation": "Nhóm 2 ô -> A'C'; Nhóm 2 ô -> AC"
+    },
+    {
+      "id": "A3-002",
+      "title": "Hai cột đối xứng F = Σm(0,4,3,7)",
+      "num_vars": 3,
+      "difficulty": 4,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2",
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C' + BC",
+      "answer_explanation": "Nhóm 2 ô -> B'C'; Nhóm 2 ô -> BC"
+    },
+    {
+      "id": "A3-003",
+      "title": "Ba nhóm kề F = Σm(1,3,4,5,6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#2196F3"
+        },
+        {
+          "id": 3,
+          "cells": [
+            "1,0",
+            "1,3"
+          ],
+          "color": "#FF9800"
+        }
+      ],
+      "answer": "A'C + B'C + AC'",
+      "answer_explanation": "Nhóm 2 ô -> A'C; Nhóm 2 ô -> B'C; Nhóm 2 ô -> AC'"
+    },
+    {
+      "id": "A3-004",
+      "title": "Bao biên + dọc F = Σm(0,1,2,5)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C' + B'C",
+      "answer_explanation": "Nhóm 2 ô -> A'C'; Nhóm 2 ô -> B'C"
+    },
+    {
+      "id": "A3-005",
+      "title": "Sáu ô kề F = Σm(2,3,4,5,6,7)",
+      "num_vars": 3,
+      "difficulty": 4,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B + A",
+      "answer_explanation": "Nhóm 4 ô -> B; Nhóm 4 ô -> A"
+    },
+    {
+      "id": "A3-006",
+      "title": "Hai nhóm + 1 ô cô lập m7",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0",
+            "1,3"
+          ],
+          "color": "#2196F3"
+        },
+        {
+          "id": 3,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#FF9800"
+        }
+      ],
+      "answer": "B'C' + AC' + ABC",
+      "answer_explanation": "Nhóm 2 ô -> B'C'; Nhóm 2 ô -> AC'; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-007",
+      "title": "Parity 3 biến (4 ô cô lập hoàn toàn)",
+      "num_vars": 3,
+      "difficulty": 7,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        },
+        {
+          "id": 3,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#FF9800"
+        },
+        {
+          "id": 4,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#E91E63"
+        }
+      ],
+      "answer": "A'B'C + A'BC' + AB'C' + ABC",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B'C; Ô cô lập 1 ô -> A'BC'; Ô cô lập 1 ô -> AB'C'; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-008",
+      "title": "Đối xứng chéo (4 ô cô lập hoàn toàn)",
+      "num_vars": 3,
+      "difficulty": 7,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        },
+        {
+          "id": 3,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#FF9800"
+        },
+        {
+          "id": 4,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#E91E63"
+        }
+      ],
+      "answer": "A'B'C' + A'BC + AB'C + ABC'",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B'C'; Ô cô lập 1 ô -> A'BC; Ô cô lập 1 ô -> AB'C; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-009",
+      "title": "B=0 và C=0",
+      "num_vars": 3,
+      "difficulty": 4,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B' + B'C'",
+      "answer_explanation": "Nhóm 4 ô -> B'; Nhóm 2 ô -> B'C'"
+    },
+    {
+      "id": "A3-010",
+      "title": "C=1 và B'C'",
+      "num_vars": 3,
+      "difficulty": 4,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + B'C'",
+      "answer_explanation": "Nhóm 4 ô -> C; Nhóm 2 ô -> B'C'"
+    },
+    {
+      "id": "A3-011",
+      "title": "Nhóm 2 ô '00-' + Ô cô lập m2",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'B' + A'BC'",
+      "answer_explanation": "Nhóm 2 ô -> A'B'; Ô cô lập 1 ô -> A'BC'"
+    },
+    {
+      "id": "A3-012",
+      "title": "Nhóm 2 ô '0-1' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C + AB'C",
+      "answer_explanation": "Nhóm 2 ô -> A'C; Ô cô lập 1 ô -> AB'C"
+    },
+    {
+      "id": "A3-013",
+      "title": "Nhóm 2 ô '10-' + Ô cô lập m0",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AB' + A'B'C'",
+      "answer_explanation": "Nhóm 2 ô -> AB'; Ô cô lập 1 ô -> A'B'C'"
+    },
+    {
+      "id": "A3-014",
+      "title": "Nhóm 2 ô '1-1' + Ô cô lập m3",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC + A'BC",
+      "answer_explanation": "Nhóm 2 ô -> AC; Ô cô lập 1 ô -> A'BC"
+    },
+    {
+      "id": "A3-015",
+      "title": "Nhóm 2 ô '-00' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C' + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> B'C'; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-016",
+      "title": "Nhóm 2 ô '-11' + Ô cô lập m1",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,2",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC + A'B'C",
+      "answer_explanation": "Nhóm 2 ô -> BC; Ô cô lập 1 ô -> A'B'C"
+    },
+    {
+      "id": "A3-017",
+      "title": "Nhóm 2 ô '0-0' + Ô cô lập m4",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C' + AB'C'",
+      "answer_explanation": "Nhóm 2 ô -> A'C'; Ô cô lập 1 ô -> AB'C'"
+    },
+    {
+      "id": "A3-018",
+      "title": "Nhóm 2 ô '1-0' + Ô cô lập m7",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC' + ABC",
+      "answer_explanation": "Nhóm 2 ô -> AC'; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-019",
+      "title": "Nhóm 2 ô '-01' + Ô cô lập m2",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C + A'BC'",
+      "answer_explanation": "Nhóm 2 ô -> B'C; Ô cô lập 1 ô -> A'BC'"
+    },
+    {
+      "id": "A3-020",
+      "title": "Nhóm 2 ô '-10' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC' + AB'C",
+      "answer_explanation": "Nhóm 2 ô -> BC'; Ô cô lập 1 ô -> AB'C"
+    },
+    {
+      "id": "A3-021",
+      "title": "Nhóm 2 ô '00-' + Ô cô lập m3",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'B' + A'BC",
+      "answer_explanation": "Nhóm 2 ô -> A'B'; Ô cô lập 1 ô -> A'BC"
+    },
+    {
+      "id": "A3-022",
+      "title": "Nhóm 2 ô '0-1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> A'C; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-023",
+      "title": "Nhóm 2 ô '10-' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AB' + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> AB'; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-024",
+      "title": "Nhóm 2 ô '1-1' + Ô cô lập m1",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC + A'B'C",
+      "answer_explanation": "Nhóm 2 ô -> AC; Ô cô lập 1 ô -> A'B'C"
+    },
+    {
+      "id": "A3-025",
+      "title": "Nhóm 2 ô '-00' + Ô cô lập m7",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C' + ABC",
+      "answer_explanation": "Nhóm 2 ô -> B'C'; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-026",
+      "title": "Nhóm 2 ô '-11' + Ô cô lập m2",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,2",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC + A'BC'",
+      "answer_explanation": "Nhóm 2 ô -> BC; Ô cô lập 1 ô -> A'BC'"
+    },
+    {
+      "id": "A3-027",
+      "title": "Nhóm 2 ô '0-0' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C' + AB'C",
+      "answer_explanation": "Nhóm 2 ô -> A'C'; Ô cô lập 1 ô -> AB'C"
+    },
+    {
+      "id": "A3-028",
+      "title": "Nhóm 2 ô '1-0' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC' + AB'C",
+      "answer_explanation": "Nhóm 2 ô -> AC'; Ô cô lập 1 ô -> AB'C"
+    },
+    {
+      "id": "A3-029",
+      "title": "Nhóm 2 ô '-01' + Ô cô lập m0",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C + A'B'C'",
+      "answer_explanation": "Nhóm 2 ô -> B'C; Ô cô lập 1 ô -> A'B'C'"
+    },
+    {
+      "id": "A3-030",
+      "title": "Nhóm 2 ô '-10' + Ô cô lập m3",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC' + A'BC",
+      "answer_explanation": "Nhóm 2 ô -> BC'; Ô cô lập 1 ô -> A'BC"
+    },
+    {
+      "id": "A3-031",
+      "title": "Nhóm 2 ô '00-' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'B' + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> A'B'; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-032",
+      "title": "Nhóm 2 ô '0-1' + Ô cô lập m4",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C + AB'C'",
+      "answer_explanation": "Nhóm 2 ô -> A'C; Ô cô lập 1 ô -> AB'C'"
+    },
+    {
+      "id": "A3-033",
+      "title": "Nhóm 2 ô '10-' + Ô cô lập m7",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AB' + ABC",
+      "answer_explanation": "Nhóm 2 ô -> AB'; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-034",
+      "title": "Nhóm 2 ô '1-1' + Ô cô lập m2",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC + A'BC'",
+      "answer_explanation": "Nhóm 2 ô -> AC; Ô cô lập 1 ô -> A'BC'"
+    },
+    {
+      "id": "A3-035",
+      "title": "Nhóm 2 ô '-00' + Ô cô lập m2",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C' + A'BC'",
+      "answer_explanation": "Nhóm 2 ô -> B'C'; Ô cô lập 1 ô -> A'BC'"
+    },
+    {
+      "id": "A3-036",
+      "title": "Nhóm 2 ô '-11' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,2",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC + AB'C",
+      "answer_explanation": "Nhóm 2 ô -> BC; Ô cô lập 1 ô -> AB'C"
+    },
+    {
+      "id": "A3-037",
+      "title": "Nhóm 2 ô '0-0' + Ô cô lập m3",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C' + A'BC",
+      "answer_explanation": "Nhóm 2 ô -> A'C'; Ô cô lập 1 ô -> A'BC"
+    },
+    {
+      "id": "A3-038",
+      "title": "Nhóm 2 ô '1-0' + Ô cô lập m3",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC' + A'BC",
+      "answer_explanation": "Nhóm 2 ô -> AC'; Ô cô lập 1 ô -> A'BC"
+    },
+    {
+      "id": "A3-039",
+      "title": "Nhóm 2 ô '-01' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> B'C; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-040",
+      "title": "Nhóm 2 ô '-10' + Ô cô lập m1",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC' + A'B'C",
+      "answer_explanation": "Nhóm 2 ô -> BC'; Ô cô lập 1 ô -> A'B'C"
+    },
+    {
+      "id": "A3-041",
+      "title": "Nhóm 2 ô '00-' + Ô cô lập m4",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'B' + AB'C'",
+      "answer_explanation": "Nhóm 2 ô -> A'B'; Ô cô lập 1 ô -> AB'C'"
+    },
+    {
+      "id": "A3-042",
+      "title": "Nhóm 2 ô '0-1' + Ô cô lập m7",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C + ABC",
+      "answer_explanation": "Nhóm 2 ô -> A'C; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-043",
+      "title": "Nhóm 2 ô '10-' + Ô cô lập m2",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AB' + A'BC'",
+      "answer_explanation": "Nhóm 2 ô -> AB'; Ô cô lập 1 ô -> A'BC'"
+    },
+    {
+      "id": "A3-044",
+      "title": "Nhóm 2 ô '1-1' + Ô cô lập m0",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC + A'B'C'",
+      "answer_explanation": "Nhóm 2 ô -> AC; Ô cô lập 1 ô -> A'B'C'"
+    },
+    {
+      "id": "A3-045",
+      "title": "Nhóm 2 ô '-00' + Ô cô lập m3",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C' + A'BC",
+      "answer_explanation": "Nhóm 2 ô -> B'C'; Ô cô lập 1 ô -> A'BC"
+    },
+    {
+      "id": "A3-046",
+      "title": "Nhóm 2 ô '-11' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,2",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> BC; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-047",
+      "title": "Nhóm 2 ô '0-0' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'C' + ABC'",
+      "answer_explanation": "Nhóm 2 ô -> A'C'; Ô cô lập 1 ô -> ABC'"
+    },
+    {
+      "id": "A3-048",
+      "title": "Nhóm 2 ô '1-0' + Ô cô lập m1",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "AC' + A'B'C",
+      "answer_explanation": "Nhóm 2 ô -> AC'; Ô cô lập 1 ô -> A'B'C"
+    },
+    {
+      "id": "A3-049",
+      "title": "Nhóm 2 ô '-01' + Ô cô lập m4",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "B'C + AB'C'",
+      "answer_explanation": "Nhóm 2 ô -> B'C; Ô cô lập 1 ô -> AB'C'"
+    },
+    {
+      "id": "A3-050",
+      "title": "Nhóm 2 ô '-10' + Ô cô lập m7",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,2"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "BC' + ABC",
+      "answer_explanation": "Nhóm 2 ô -> BC'; Ô cô lập 1 ô -> ABC"
+    },
+    {
+      "id": "A3-051",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-052",
+      "title": "Don't Care: Khối '1--' nhờ d(5,6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "A3-053",
+      "title": "Don't Care: Khối '-0-' nhờ d(4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        4
+      ]
+    },
+    {
+      "id": "A3-054",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "A3-055",
+      "title": "Don't Care: Khối '-1-' nhờ d(2)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-056",
+      "title": "Don't Care: Khối '--0' nhờ d(2,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "A3-057",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-058",
+      "title": "Don't Care: Khối '1--' nhờ d(7,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "A3-059",
+      "title": "Don't Care: Khối '-0-' nhờ d(0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-060",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "A3-061",
+      "title": "Don't Care: Khối '-1-' nhờ d(6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        6
+      ]
+    },
+    {
+      "id": "A3-062",
+      "title": "Don't Care: Khối '--0' nhờ d(6,0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "A3-063",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-064",
+      "title": "Don't Care: Khối '1--' nhờ d(5,6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "A3-065",
+      "title": "Don't Care: Khối '-0-' nhờ d(4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        4
+      ]
+    },
+    {
+      "id": "A3-066",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "A3-067",
+      "title": "Don't Care: Khối '-1-' nhờ d(2)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-068",
+      "title": "Don't Care: Khối '--0' nhờ d(2,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "A3-069",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-070",
+      "title": "Don't Care: Khối '1--' nhờ d(7,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "A3-071",
+      "title": "Don't Care: Khối '-0-' nhờ d(0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-072",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "A3-073",
+      "title": "Don't Care: Khối '-1-' nhờ d(6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        6
+      ]
+    },
+    {
+      "id": "A3-074",
+      "title": "Don't Care: Khối '--0' nhờ d(6,0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "A3-075",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-076",
+      "title": "Don't Care: Khối '1--' nhờ d(5,6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "A3-077",
+      "title": "Don't Care: Khối '-0-' nhờ d(4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        4
+      ]
+    },
+    {
+      "id": "A3-078",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "A3-079",
+      "title": "Don't Care: Khối '-1-' nhờ d(2)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-080",
+      "title": "Don't Care: Khối '--0' nhờ d(2,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "A3-081",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-082",
+      "title": "Don't Care: Khối '1--' nhờ d(7,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "A3-083",
+      "title": "Don't Care: Khối '-0-' nhờ d(0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-084",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "A3-085",
+      "title": "Don't Care: Khối '-1-' nhờ d(6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        6
+      ]
+    },
+    {
+      "id": "A3-086",
+      "title": "Don't Care: Khối '--0' nhờ d(6,0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "A3-087",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-088",
+      "title": "Don't Care: Khối '1--' nhờ d(5,6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "A3-089",
+      "title": "Don't Care: Khối '-0-' nhờ d(4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        4
+      ]
+    },
+    {
+      "id": "A3-090",
+      "title": "Don't Care '--1' + Ô cô lập m6",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,3"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "C + ABC'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C; Ô cô lập 1 ô -> ABC'",
+      "dont_cares": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "A3-091",
+      "title": "Don't Care: Khối '-1-' nhờ d(2)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-092",
+      "title": "Don't Care: Khối '--0' nhờ d(2,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "A3-093",
+      "title": "Don't Care '0--' + Ô cô lập m5",
+      "num_vars": 3,
+      "difficulty": 6,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + AB'C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'; Ô cô lập 1 ô -> AB'C",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "A3-094",
+      "title": "Don't Care: Khối '1--' nhờ d(7,4)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "A3-095",
+      "title": "Don't Care: Khối '-0-' nhờ d(0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-096",
+      "title": "Don't Care: Khối '--1' nhờ d(3,5)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "0,2",
+            "1,1",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C",
+      "dont_cares": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "A3-097",
+      "title": "Don't Care: Khối '-1-' nhờ d(6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,3",
+            "0,2",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        6
+      ]
+    },
+    {
+      "id": "A3-098",
+      "title": "Don't Care: Khối '--0' nhờ d(6,0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,3",
+            "1,0",
+            "1,3"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "C'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> C'",
+      "dont_cares": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "A3-099",
+      "title": "Don't Care: Khối '0--' nhờ d(0)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "0,3",
+            "0,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A'",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A'",
+      "dont_cares": [
+        0
+      ]
+    },
+    {
+      "id": "A3-100",
+      "title": "Don't Care: Khối '1--' nhờ d(5,6)",
+      "num_vars": 3,
+      "difficulty": 5,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,3",
+            "1,2"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 4 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        5,
+        6
+      ]
+    }
+  ]
+}

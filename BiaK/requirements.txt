@@ -1,0 +1,17 @@
+# BiaK Game - Yêu Cầu Thư Viện
+# Cài đặt bằng lệnh: pip install -r requirements.txt
+
+# Core Python (không cần cài thêm)
+# - tkinter (đã có sẵn trong Python)
+# - json (standard library)
+# - pathlib (standard library)
+
+# Optional dependencies for advanced features:
+# pygame==2.5.0       # Nếu muốn dùng GUI nâng cao thay vì Tkinter
+# numpy==1.26.0        # Xử lý ma trận bìa Karnaugh
+
+# Development dependencies (không cần cài khi chạy game):
+# pytest==8.0.0        # Test
+# black==24.0.0        # Code formatting
+# flake8==7.0.0        # Code linting
+

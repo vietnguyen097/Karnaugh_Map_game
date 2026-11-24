@@ -1,0 +1,100 @@
+{
+  "level": "basic",
+  "category": "3_variables_extended",
+  "description": "Các bài toán Karnaugh 3 biến cơ bản mở rộng (Expanded Basic)",
+  "problems": [
+    {
+      "id": "B3-001",
+      "title": "F = A'B'C'",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 0}, {"row": 0, "col": 1, "value": 0}, {"row": 0, "col": 2, "value": 0}, {"row": 0, "col": 3, "value": 0}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 0}],
+      "groups": [{"id": 1, "cells": ["0,0"], "color": "#FF9800"}],
+      "answer": "A'B'C'",
+      "answer_explanation": "Minterms: 0",
+      "difficulty": 1
+    },
+    {
+      "id": "B3-002",
+      "title": "F = Σm(7)",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 0}, {"row": 0, "col": 1, "value": 0}, {"row": 0, "col": 2, "value": 0}, {"row": 0, "col": 3, "value": 0}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 1}],
+      "groups": [{"id": 1, "cells": ["1,3"], "color": "#FF9800"}],
+      "answer": "Σm(7)",
+      "answer_explanation": "Minterms: 7",
+      "difficulty": 1
+    },
+    {
+      "id": "B3-003",
+      "title": "F = A'",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 1}, {"row": 0, "col": 1, "value": 1}, {"row": 0, "col": 2, "value": 1}, {"row": 0, "col": 3, "value": 1}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 0}],
+      "groups": [{"id": 1, "cells": ["0,0", "0,1", "0,2", "0,3"], "color": "#4CAF50"}],
+      "answer": "A'",
+      "answer_explanation": "Minterms: 0,1,2,3",
+      "difficulty": 1
+    },
+    {
+      "id": "B3-004",
+      "title": "F = AB",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 0}, {"row": 0, "col": 1, "value": 0}, {"row": 0, "col": 2, "value": 0}, {"row": 0, "col": 3, "value": 0}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 1}],
+      "groups": [{"id": 1, "cells": ["1,3"], "color": "#FF9800"}],
+      "answer": "AB",
+      "answer_explanation": "Minterms: 4,5,6,7",
+      "difficulty": 2
+    },
+    {
+      "id": "B3-005",
+      "title": "F = B'C'",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 1}, {"row": 0, "col": 1, "value": 0}, {"row": 0, "col": 2, "value": 1}, {"row": 0, "col": 3, "value": 0}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 0}],
+      "groups": [{"id": 1, "cells": ["0,0", "0,2"], "color": "#FF9800"}],
+      "answer": "B'C'",
+      "answer_explanation": "Minterms: 0,4",
+      "difficulty": 2
+    },
+    {
+      "id": "B3-006",
+      "title": "F = B'C",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 0}, {"row": 0, "col": 1, "value": 1}, {"row": 0, "col": 2, "value": 0}, {"row": 0, "col": 3, "value": 1}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 0}],
+      "groups": [{"id": 1, "cells": ["0,1"], "color": "#FF9800"}],
+      "answer": "B'C",
+      "answer_explanation": "Minterms: 1,5",
+      "difficulty": 2
+    },
+    {
+      "id": "B3-007",
+      "title": "F = A'B'",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 1}, {"row": 0, "col": 1, "value": 0}, {"row": 0, "col": 2, "value": 0}, {"row": 0, "col": 3, "value": 1}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 1}],
+      "groups": [{"id": 1, "cells": ["0,0", "1,3"], "color": "#FF9800"}],
+      "answer": "A'B'",
+      "answer_explanation": "Minterms: 0,4",
+      "difficulty": 2
+    },
+    {
+      "id": "B3-008",
+      "title": "F = AB'",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 0}, {"row": 0, "col": 1, "value": 0}, {"row": 0, "col": 2, "value": 0}, {"row": 0, "col": 3, "value": 0}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 1}, {"row": 1, "col": 3, "value": 1}],
+      "groups": [{"id": 1, "cells": ["1,2"], "color": "#FF9800"}],
+      "answer": "AB'",
+      "answer_explanation": "Minterms: 4,5",
+      "difficulty": 2
+    },
+    {
+      "id": "B3-009",
+      "title": "F = AC",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 0}, {"row": 0, "col": 1, "value": 1}, {"row": 0, "col": 2, "value": 1}, {"row": 0, "col": 3, "value": 0}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 1}, {"row": 1, "col": 2, "value": 1}, {"row": 1, "col": 3, "value": 0}],
+      "groups": [{"id": 1, "cells": ["0,1", "0,2"], "color": "#FF9800"}],
+      "answer": "AC",
+      "answer_explanation": "Minterms: 2,3",
+      "difficulty": 2
+    },
+    {
+      "id": "B3-010",
+      "title": "F = A'C'",
+      "kmap_grid": [{"row": 0, "col": 0, "value": 1}, {"row": 0, "col": 1, "value": 1}, {"row": 0, "col": 2, "value": 1}, {"row": 0, "col": 3, "value": 1}, {"row": 1, "col": 0, "value": 0}, {"row": 1, "col": 1, "value": 0}, {"row": 1, "col": 2, "value": 0}, {"row": 1, "col": 3, "value": 0}],
+      "groups": [{"id": 1, "cells": ["0,0", "0,1", "0,2", "0,3"], "color": "#4CAF50"}],
+      "answer": "A'C'",
+      "answer_explanation": "Minterms: 0,1,2,3",
+      "difficulty": 1
+    }
+  ],
+  "total_problems": 10,
+  "difficulty_range": "1-2",
+  "note": "File đang bổ sung thêm bài toán. Tổng số bài cuối cùng sẽ là ~34 bài."
+}

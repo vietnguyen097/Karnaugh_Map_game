@@ -1,0 +1,863 @@
+{
+  "level": "basic",
+  "category": "2_variables",
+  "description": "Bài toán 2 biến",
+  "problems": [
+    {
+      "id": "B2-001",
+      "title": "Hàng A = 0",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A'",
+      "answer_explanation": "Nhóm 2 ô -> A'"
+    },
+    {
+      "id": "B2-002",
+      "title": "Hàng A = 1",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 2 ô -> A"
+    },
+    {
+      "id": "B2-003",
+      "title": "Cột B = 0",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 2 ô -> B'"
+    },
+    {
+      "id": "B2-004",
+      "title": "Cột B = 1",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 2 ô -> B"
+    },
+    {
+      "id": "B2-005",
+      "title": "Ô cô lập m0 (0,0)",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A'B'",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B'"
+    },
+    {
+      "id": "B2-006",
+      "title": "Ô cô lập m1 (0,1)",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A'B",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B"
+    },
+    {
+      "id": "B2-007",
+      "title": "Ô cô lập m2 (1,0)",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "AB'",
+      "answer_explanation": "Ô cô lập 1 ô -> AB'"
+    },
+    {
+      "id": "B2-008",
+      "title": "Ô cô lập m3 (1,1)",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "AB",
+      "answer_explanation": "Ô cô lập 1 ô -> AB"
+    },
+    {
+      "id": "B2-009",
+      "title": "Toàn bộ bìa F = 1",
+      "num_vars": 2,
+      "difficulty": 1,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1",
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "1",
+      "answer_explanation": "Nhóm 4 ô -> 1"
+    },
+    {
+      "id": "B2-010",
+      "title": "Hai ô cô lập m0 và m3 (XNOR)",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'B' + AB",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B'; Ô cô lập 1 ô -> AB"
+    },
+    {
+      "id": "B2-011",
+      "title": "Hai ô cô lập m1 và m2 (XOR)",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A'B + AB'",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B; Ô cô lập 1 ô -> AB'"
+    },
+    {
+      "id": "B2-012",
+      "title": "F = A' + B",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + B",
+      "answer_explanation": "Nhóm 2 ô -> A'; Nhóm 2 ô -> B"
+    },
+    {
+      "id": "B2-013",
+      "title": "F = A + B",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A + B",
+      "answer_explanation": "Nhóm 2 ô -> A; Nhóm 2 ô -> B"
+    },
+    {
+      "id": "B2-014",
+      "title": "F = A' + B'",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A' + B'",
+      "answer_explanation": "Nhóm 2 ô -> A'; Nhóm 2 ô -> B'"
+    },
+    {
+      "id": "B2-015",
+      "title": "F = A + B'",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 1
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        },
+        {
+          "id": 2,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#2196F3"
+        }
+      ],
+      "answer": "A + B'",
+      "answer_explanation": "Nhóm 2 ô -> A; Nhóm 2 ô -> B'"
+    },
+    {
+      "id": "B2-016",
+      "title": "Don't Care: m(0) + d(1)",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "0,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A'",
+      "answer_explanation": "Nhóm 2 ô (kết hợp ô tùy định X) -> A'",
+      "dont_cares": [
+        1
+      ]
+    },
+    {
+      "id": "B2-017",
+      "title": "Don't Care: m(1) + d(3)",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,1",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B",
+      "answer_explanation": "Nhóm 2 ô (kết hợp ô tùy định X) -> B",
+      "dont_cares": [
+        3
+      ]
+    },
+    {
+      "id": "B2-018",
+      "title": "Don't Care: m(2) + d(3)",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "1,0",
+            "1,1"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A",
+      "answer_explanation": "Nhóm 2 ô (kết hợp ô tùy định X) -> A",
+      "dont_cares": [
+        3
+      ]
+    },
+    {
+      "id": "B2-019",
+      "title": "Don't Care: m(0) + d(2)",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": "X"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": 0
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0",
+            "1,0"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "B'",
+      "answer_explanation": "Nhóm 2 ô (kết hợp ô tùy định X) -> B'",
+      "dont_cares": [
+        2
+      ]
+    },
+    {
+      "id": "B2-020",
+      "title": "Don't Care: m(0) + d(3) cô lập",
+      "num_vars": 2,
+      "difficulty": 2,
+      "kmap_grid": [
+        {
+          "row": 0,
+          "col": 0,
+          "value": 1
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "value": 0
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "value": "X"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1,
+          "cells": [
+            "0,0"
+          ],
+          "color": "#4CAF50"
+        }
+      ],
+      "answer": "A'B'",
+      "answer_explanation": "Ô cô lập 1 ô -> A'B'",
+      "dont_cares": [
+        3
+      ]
+    }
+  ]
+}
